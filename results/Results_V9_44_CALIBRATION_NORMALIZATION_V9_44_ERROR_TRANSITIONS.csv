@@ -1,0 +1,7 @@
+condition,paired_predictions,baseline_errors,candidate_errors,corrected_errors,introduced_errors,both_correct,both_wrong,net_fewer_errors
+participant_mean_center,34953,4586,4438,1883,1735,28632,2703,148
+participant_zscore,34953,4586,5187,2106,2707,27660,2480,-601
+participant_robust_zscore,34953,4586,5246,2113,2773,27594,2473,-660
+geometric_median,34953,4586,4436,1816,1666,28701,2770,150
+hybrid_50_50,34953,4586,4381,1861,1656,28711,2725,205
+hybrid_selected_025,34953,4586,4460,1866,1740,28627,2720,126

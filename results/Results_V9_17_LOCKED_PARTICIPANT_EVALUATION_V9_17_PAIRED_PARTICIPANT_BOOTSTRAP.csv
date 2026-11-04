@@ -1,0 +1,2 @@
+comparison,participants,mean_f1_difference,ci_2_5,ci_97_5,participants_improved,participants_worsened,participants_unchanged,bootstrap_replicates,bootstrap_unit,interpretation
+geometric_median_minus_no_reference,6,0.01652673431366658,0.005766578904967771,0.027472943669091515,5,1,0,10000,locked participant,Exploratory interval based on six participants; not definitive statistical confirmation.

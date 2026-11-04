@@ -1,0 +1,3 @@
+condition,overall_participant_macro_f1,overall_participant_macro_pr_auc,overall_participant_macro_roc_auc,participant_count
+geometric_median,0.8225851736810234,0.8928980926953387,0.9087330135049329,6
+no_reference,0.8060584393673568,0.8939015930731431,0.9071393132553193,6

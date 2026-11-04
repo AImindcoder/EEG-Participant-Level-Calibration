@@ -1,0 +1,88 @@
+﻿{
+    "experiment":  "V9-54",
+    "experiment_name":  "Nabiyouni independent-participant six-class condition classification",
+    "timestamp":  "2026-11-04T16:37:43",
+    "dataset":  "Nabiyouni EEG dataset (external dataset; raw data not included)",
+    "participant_overlap":  [
+
+                            ],
+    "calibration_repetition":  1,
+    "evaluation_repetition":  2,
+    "calibration_labels_used":  false,
+    "classes":  [
+                    "baseline",
+                    "eye",
+                    "eyebrow",
+                    "head_motion",
+                    "jaw_clench",
+                    "jaw_movement"
+                ],
+    "features":  [
+                     "log_rms",
+                     "log_std",
+                     "log_peak_to_peak",
+                     "log_median_abs",
+                     "log_p95_abs",
+                     "log_line_length",
+                     "zero_crossing_rate",
+                     "skewness",
+                     "excess_kurtosis",
+                     "log_delta_power",
+                     "log_theta_power",
+                     "log_alpha_power",
+                     "log_beta_power",
+                     "log_gamma_power",
+                     "spectral_entropy"
+                 ],
+    "feature_count":  15,
+    "sample_rate_hz":  1000,
+    "segment_duration_seconds":  1.0,
+    "classifier":  "LogisticRegression",
+    "classifier_C":  1.0,
+    "class_weight":  "balanced",
+    "scaler_fit_on_training_only":  true,
+    "global_calibration_location_scale_fit_on_training_only":  true,
+    "methods":  [
+                    "no_reference",
+                    "mean_center",
+                    "geometric_median"
+                ],
+    "training_segments":  524,
+    "test_segments":  221,
+    "results":  [
+                    {
+                        "method":  "no_reference",
+                        "test_participants":  3,
+                        "total_test_segments":  221,
+                        "participant_macro_f1_mean":  0.4755849029431003,
+                        "participant_macro_f1_std":  0.08145835763667797,
+                        "participant_balanced_accuracy_mean":  0.5442804075859322,
+                        "participant_macro_ap_mean":  0.6618501465485894
+                    },
+                    {
+                        "method":  "mean_center",
+                        "test_participants":  3,
+                        "total_test_segments":  221,
+                        "participant_macro_f1_mean":  0.5908949699629243,
+                        "participant_macro_f1_std":  0.03712236427621075,
+                        "participant_balanced_accuracy_mean":  0.6404122550433267,
+                        "participant_macro_ap_mean":  0.6844306431843697
+                    },
+                    {
+                        "method":  "geometric_median",
+                        "test_participants":  3,
+                        "total_test_segments":  221,
+                        "participant_macro_f1_mean":  0.5958382010179969,
+                        "participant_macro_f1_std":  0.02293899246526653,
+                        "participant_balanced_accuracy_mean":  0.647087161317788,
+                        "participant_macro_ap_mean":  0.6952236700322976
+                    }
+                ],
+    "v8_modified":  false,
+    "existing_v9_models_modified":  false,
+    "source_data_modified":  false,
+    "test_labels_used_for_calibration":  false,
+    "interpretation":  "Exploratory six-class condition-classification pilot using an independent participant split within the Nabiyouni dataset. Repetition 1 is used as an unlabeled calibration feature pool. Repetition 2 is used for supervised training or held-out participant evaluation. Labels are inherited from recording filenames. This is not direct validation of the original 34-channel V9 classifier and is not frame-level artifact event detection. Calibration pools contain a mixture of recording conditions.",
+    "training_participant_count":  7,
+    "test_participant_count":  3
+}
